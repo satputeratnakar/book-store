@@ -1,0 +1,158 @@
+.book_box {
+    width: 114px !important;
+    height: 162px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+
+}
+
+.book_container {
+    margin: 15px;
+    cursor: pointer;
+}
+
+
+.card_root {
+    margin: 70px 0px !important;
+    background-color: #F0F0F6;
+    padding: 45px;
+}
+
+.book_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 12px;
+}
+
+.book_head {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.book_auth {
+    font-weight: #F0F0F6;
+}
+
+.book_img {
+    width: 114px;
+    height: 162px !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.cat_title {
+    cursor: pointer;
+    font-size: 30px;
+    color: #5E56E7;
+    margin-bottom: 15px;
+}
+
+input {
+    color: rgba(0, 0, 0, .87);
+    outline-color: none;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    flex-grow: 1;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* .voice {
+    height: 20px;
+    margin: 0px 5px;
+} */
+
+/* .search-icon {
+    color: rgb(154, 160, 166);
+    margin: 0px 5px;
+} */
+
+
+.searchLabelWrap {
+    display: flex;
+    gap: 0.5rem;
+    background-color: #f0f0f6;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    &:focus-within {
+        outline: 2px solid var(--focus-blue);
+        outline-offset: 2px;
+    }
+}
+
+.searchInput {
+    border: 0;
+    outline: 0;
+    font: inherit;
+}
+
+.icon {
+    width: 1rem;
+    aspect-ratio: 1;
+    fill: currentColor;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+
+/* =========================================== */
+
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.book {
+    cursor: pointer;
+}
+
+.book h3 {
+    margin-top: 0;
+}
+
+.book p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .book-container {
+        grid-template-columns: 1fr;
+    }
+}
